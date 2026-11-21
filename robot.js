@@ -1,0 +1,184 @@
+/* Robot IA WebDesign: monta la mascota en cada <span class="rv" data-pose data-frase>,
+   la hace entrar al verla, parpadear, mirar hacia el cursor y hablar al pasar o tocar. Sin dependencias. */
+(function () {
+  var base = window.RV_BASE || (document.currentScript && document.currentScript.src || '').replace(/robot\.js.*$/, '');
+  // Dos figuras: de costado (rs-) y de frente (fr-). En la de frente, rv-brazo es su brazo derecho (a la derecha de la imagen).
+  var FIG = { costado: { pre: 'rs-', w: 275, h: 372, a: 'brazo', b: 'brazo2' }, frente: { pre: 'fr-', w: 226, h: 359, a: 'brazod', b: 'brazoi' } };
+  function img(f, n, fichero) { return '<img class="rv-' + n + '" src="' + base + f.pre + (fichero || n) + '.webp" alt="" width="' + f.w + '" height="' + f.h + '" decoding="async" loading="lazy">'; }
+  function monta(r) {
+    var f = FIG[r.dataset.figura] || FIG.costado, b = r.querySelector('.rv-bocadillo');
+    var fig = '<span class="rv-salto"><span class="rv-fig">' + img(f, 'brazo2', f.b) + img(f, 'cuerpo') +
+      '<span class="rv-cab"><span class="rv-cab-in">' + img(f, 'cabeza') + '<span class="rv-visor"></span><i class="rv-parpado"></i></span></span>' +
+      '<span class="rv-nube"><i></i><i></i><i></i></span>' + img(f, 'brazo', f.a) + '</span></span>';
+    var vieja = r.querySelector('.rv-salto');
+    if (vieja) vieja.outerHTML = fig; else r.insertAdjacentHTML('afterbegin', fig);
+    if (!b && r.dataset.frase) r.insertAdjacentHTML('beforeend', '<span class="rv-bocadillo">' + r.dataset.frase + '</span>');
+  }
+  var GUIONES = {
+    piensa: ['·', '··', '···', '?', '···', 'IA'],
+    cuenta: ['2+3', '=5', '45€', '×12', '✓', 'IA'],
+    baila: ['♪', '^‿^', '♫', '^‿^'],
+    meneo: ['^‿^', '♪', '^‿^', '♫'],
+    saluda: ['^‿^', 'HOLA', '^‿^', 'IA'],
+    aprende: ['IA', '+1', 'IA↑', '+1', '✓']
+  };
+  GUIONES.piensa.ritmo = 650; GUIONES.cuenta.ritmo = 600; GUIONES.baila.ritmo = 450; GUIONES.meneo.ritmo = 600; GUIONES.saluda.ritmo = 800; GUIONES.aprende.ritmo = 900;
+  // Acciones al azar: [clase, duración en ms, pone cara alegre]
+  var ACCIONES = [['rv-salta', 760, 1], ['rv-agacha', 1320, 0], ['rv-gira', 1100, 0], ['rv-estira', 1420, 0], ['rv-pasos', 1220, 0], ['rv-hola', 1200, 1], ['rv-salta', 760, 1], ['rv-agacha', 1320, 0]];
+  // Con «reducir movimiento» solo gestos pequeños: saludar y girar la cabeza
+  var SUAVES = [['rv-hola', 1200, 1], ['rv-gira', 1100, 0]];
+  var robots = [].slice.call(document.querySelectorAll('.rv'));
+  var reducido = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  robots.forEach(function (r, i) {
+    r.setAttribute('aria-hidden', 'true');
+    r.innerHTML = ''; monta(r);
+    // Cada robot parpadea a su ritmo
+    r.style.setProperty('--parpadeo', (3.8 + (i * 0.7) % 2.4).toFixed(1) + 's');
+    r.style.setProperty('--retraso', (1 + (i * 0.9) % 2).toFixed(1) + 's');
+    var t;
+    function habla(ms) { r.classList.add('rv-habla'); clearTimeout(t); t = setTimeout(function () { r.classList.remove('rv-habla'); }, ms || 2600); }
+    r.addEventListener('mouseenter', function () { habla(2200); });
+    r.addEventListener('click', function () {
+      var destino = r.dataset.destino && document.querySelector(r.dataset.destino);
+      if (destino) destino.click(); else habla(2600);
+    });
+    r._habla = habla;
+    // Expresiones en la pantalla del visor
+    var paso = 0, alegre = 0;
+    function pinta() {
+      var visor = r.querySelector('.rv-visor'); if (!visor) return;
+      if (alegre > Date.now()) { visor.textContent = '^ ^'; visor.classList.add('on'); return; }
+      if (r._mira > Date.now()) {
+        if (!visor.querySelector('.rv-ojo')) visor.innerHTML = '<b class="rv-ojo"></b><b class="rv-ojo"></b>';
+        visor.classList.add('on'); return;
+      }
+      var guion = GUIONES[r.dataset.modo];
+      var espejo = r.classList.contains('rv-espejo');
+      if (!guion || !r.classList.contains('rv-dentro')) { if (espejo) { visor.textContent = 'IA'; visor.classList.add('on'); } else visor.classList.remove('on'); return; }
+      var v = guion[paso++ % guion.length]; visor.textContent = v; visor.classList.toggle('on', v !== 'IA' || espejo);
+    }
+    r.addEventListener('mouseenter', function () { alegre = Date.now() + 1500; pinta(); });
+    r._pinta = pinta;
+    r._alegre = function (ms) { alegre = Date.now() + (ms || 900); pinta(); };
+    // De vez en cuando, cada robot hace algo por su cuenta: salta o gira la cabeza
+    (function vida() {
+      setTimeout(function () {
+        var b = r.getBoundingClientRect();
+        if (r.dataset.modo !== 'meneo' && r.classList.contains('rv-dentro') && b.bottom > 0 && b.top < innerHeight && !document.hidden) {
+          var lista = (reducido || r.classList.contains('rv-logo')) ? SUAVES : ACCIONES, acc = lista[Math.floor(Math.random() * lista.length)];
+          r.classList.add(acc[0]); setTimeout(function () { r.classList.remove(acc[0]); }, acc[1]);
+          if (acc[2]) { alegre = Date.now() + acc[1]; pinta(); }
+        }
+        vida();
+      }, 4500 + Math.random() * 7000);
+    })();
+    setInterval(pinta, 600);
+  });
+
+  // Robots con objetivos (data-objetivos="selector"): señalan cada objetivo por turnos según dónde esté en pantalla
+  robots.forEach(function (r) {
+    var sel = r.dataset.objetivos; if (!sel) return;
+    var k = 0;
+    function apunta() {
+      var obj = [].slice.call(document.querySelectorAll(sel)).filter(function (o) { var b = o.getBoundingClientRect(); return b.width > 0; });
+      if (!obj.length) return;
+      var rb = r.getBoundingClientRect(), rx = rb.left + rb.width / 2;
+      // Objetivos a la vista, de derecha a izquierda
+      var todos = obj.map(function (o) { var b = o.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top }; });
+      // La primera fila que hay debajo del robot (lo que acompaña); si no, todos
+      var debajo = todos.filter(function (p) { return p.y > rb.top - rb.height; });
+      var y0 = debajo.length ? Math.min.apply(null, debajo.map(function (p) { return p.y; })) : 0;
+      var vis = (debajo.length ? debajo.filter(function (p) { return p.y < y0 + 80; }) : todos).sort(function (a, b) { return b.x - a.x; });
+      if (!vis.length) return;
+      var lados = vis.filter(function (p, i) { return i === 0 || Math.abs(p.x - vis[0].x) > 60; });
+      var p = lados[k++ % lados.length] || vis[0];
+      r.classList.toggle('rv-espejo', p.x < rx - 40); r._pinta && r._pinta();
+    }
+    apunta(); setInterval(apunta, 3200); addEventListener('resize', apunta);
+  });
+
+  // API para cambiar de expresión desde la página (la demo la usa para acompañar cada paso)
+  window.RV = {
+    pon: function (r, o) {
+      if (!r) return;
+      if (o.figura && o.figura !== (r.dataset.figura || 'costado')) { r.dataset.figura = o.figura; monta(r); }
+      if ('modo' in o) { if (o.modo) r.dataset.modo = o.modo; else delete r.dataset.modo; }
+      if (o.pose) r.dataset.pose = o.pose;
+      if (o.frase) { var b = r.querySelector('.rv-bocadillo'); if (!b) { b = document.createElement('span'); b.className = 'rv-bocadillo'; r.appendChild(b); } b.textContent = o.frase; r._habla && r._habla(o.ms || 3200); }
+    }
+  };
+  if (reducido) robots.forEach(function (r) { r.classList.add('rv-dentro'); });
+  else if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting && !e.target.classList.contains('rv-dentro')) {
+          e.target.classList.add('rv-dentro');
+          if (e.target.dataset.frase) setTimeout(function () { e.target._habla(2800); }, 1000);
+        }
+      });
+    }, { threshold: 0.6 });
+    robots.forEach(function (r) { io.observe(r); });
+  } else robots.forEach(function (r) { r.classList.add('rv-dentro'); });
+
+  // Mirada: sigue al cursor (ordenador), al dedo y al desplazamiento (móvil) y a la inclinación (Android)
+  var pend = false, mx = 0, my = 0;
+  function mira(x, y, dura) {
+    mx = x; my = y;
+    if (pend) return; pend = true;
+    requestAnimationFrame(function () {
+      pend = false;
+      robots.forEach(function (r) {
+        if (!r.classList.contains('rv-dentro')) return;
+        var b = r.getBoundingClientRect(); if (b.bottom < 0 || b.top > innerHeight) return;
+        var cx = b.left + b.width * 0.47, cy = b.top + b.height * 0.3;
+        var dx = mx - cx, dy = my - cy;
+        if (r.dataset.pose === 'izquierda') dx = -dx;
+        var ang = Math.max(-7, Math.min(7, Math.atan2(dy, Math.abs(dx) + 60) * 180 / Math.PI * 0.25));
+        if (dx < 0) ang = -ang * 0.5;
+        r.style.setProperty('--mira', ang.toFixed(1) + 'deg');
+        var dist = Math.hypot(dx, dy) || 1;
+        r.style.setProperty('--ox', (dx / dist * 3.2).toFixed(2) + 'px');
+        r.style.setProperty('--oy', (dy / dist * 1.8).toFixed(2) + 'px');
+        r._mira = Date.now() + (dura || 1600); r._pinta();
+      });
+    });
+  }
+  if (matchMedia('(pointer: fine)').matches) addEventListener('mousemove', function (ev) { mira(ev.clientX, ev.clientY); }, { passive: true });
+  // Móvil: miran al dedo
+  addEventListener('touchstart', function (ev) { var t = ev.touches[0]; if (t) mira(t.clientX, t.clientY, 2200); }, { passive: true });
+  // Móvil y ordenador: al desplazarse miran hacia donde va la página y, al parar, el robot en pantalla saluda
+  var ultY = scrollY, paro;
+  addEventListener('scroll', function () {
+    var baja = scrollY > ultY; ultY = scrollY;
+    // El robot del logo acompaña despacio: mira hacia donde va la página
+    robots.forEach(function (r) {
+      if (!r.classList.contains('rv-logo')) return;
+      r.style.setProperty('--mira', (baja ? 6 : -4) + 'deg');
+      r.style.setProperty('--ox', '0px'); r.style.setProperty('--oy', (baja ? 1.8 : -1.8) + 'px');
+      r._mira = Date.now() + 1800; r._pinta();
+      clearTimeout(r._vuelveMira); r._vuelveMira = setTimeout(function () { r.style.setProperty('--mira', '0deg'); }, 1800);
+    });
+    if (!matchMedia('(pointer: fine)').matches) mira(innerWidth / 2, baja ? innerHeight * 1.4 : -innerHeight * 0.4, 1200);
+    clearTimeout(paro);
+    paro = setTimeout(function () {
+      var vis = robots.filter(function (r) { var b = r.getBoundingClientRect(); return !r.classList.contains('rv-logo') && r.classList.contains('rv-dentro') && b.top > 40 && b.bottom < innerHeight - 20; });
+      var r = vis[Math.floor(Math.random() * vis.length)]; if (!r || r._ocupado) return;
+      var acc = reducido ? 'rv-hola' : ['rv-salta', 'rv-hola', 'rv-agacha', 'rv-salta', 'rv-pasos'][Math.floor(Math.random() * 5)];
+      r._ocupado = true; r.classList.add(acc); r._alegre && r._alegre(900);
+      setTimeout(function () { r.classList.remove(acc); r._ocupado = false; }, 1300);
+    }, 450);
+  }, { passive: true });
+  // Android: se inclinan un poco con el móvil (en iPhone haría falta pedir permiso; no se pide)
+  if (!reducido && window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission !== 'function') {
+    var pendI = false;
+    addEventListener('deviceorientation', function (e) {
+      if (e.gamma == null || pendI) return; pendI = true;
+      requestAnimationFrame(function () {
+        pendI = false;
+        var g = Math.max(-25, Math.min(25, e.gamma));
+        robots.forEach(function (r) { r.style.setProperty('--incl', (g * 0.18).toFixed(1) + 'deg'); });
+      });
+    }, { passive: true });
+  }
+})();

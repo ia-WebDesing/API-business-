@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /modo-de-prueba.html
+
+Sitemap: https://www.apibusiness.app/sitemap.xml
