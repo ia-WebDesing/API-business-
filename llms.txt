@@ -1,0 +1,37 @@
+# APPI Business · IA-WebDesign
+
+> APPI Business es el asistente de IA de IA-WebDesign para autónomos, pequeños negocios y pymes de hasta 10 personas en España. Atiende consultas por WhatsApp, Telegram y correo, organiza citas y recordatorios, prepara presupuestos con las tarifas del negocio y envía resúmenes. Las consultas que necesitan criterio profesional se derivan a una persona. IA-WebDesign trabaja desde Castellón de la Plana (Comunidad Valenciana) para toda España.
+
+## Qué hace
+- Responde por WhatsApp, Telegram y correo 24/7, también fuera de horario, con la información y el tono de cada negocio.
+- Entiende notas de voz y puede responder en el idioma del cliente.
+- Gestiona solicitudes de cita, cambios, cancelaciones, recordatorios y huecos libres con un calendario conectado y autorizado.
+- Prepara presupuestos según las tarifas acordadas y puede consultar stock si los datos están actualizados.
+- Envía campañas y avisos de promociones solo a clientes que lo han aceptado (opt-in en WhatsApp; bajas respetadas en correo).
+- Deriva a una persona las consultas incompletas o que requieren valoración, incluidas las clínicas o de salud.
+
+## Para quién
+- Centros de estética, peluquerías y barberías, tratamientos y terapias, farmacias, talleres mecánicos, transporte, restaurantes y comercios.
+
+## Precios (IVA incluido, sin permanencia)
+- Pack Autónomo: configuración desde 298 € y suscripción desde 45 €/mes.
+- Pack Negocio (hasta 3 personas): configuración desde 498 € y suscripción desde 75 €/mes.
+- Pack Pyme (hasta 10 personas): configuración desde 798 € y suscripción desde 149 €/mes.
+- El precio final depende del alcance acordado; cualquier coste externo se detalla antes de empezar.
+
+## Qué no promete
+- No garantiza posiciones en Google ni resultados comerciales concretos.
+
+## Páginas principales
+- [Inicio](https://www.apibusiness.app/): funciones, sectores, packs y precios.
+- [Preguntas frecuentes](https://www.apibusiness.app/preguntas-frecuentes.html): 24 respuestas sobre funciones, WhatsApp, citas, precios y privacidad.
+- [Política de privacidad](https://www.apibusiness.app/privacidad.html)
+- [Aviso legal](https://www.apibusiness.app/aviso-legal.html)
+- [Política de cookies](https://www.apibusiness.app/cookies.html)
+
+## Empresa
+- Titular: Blackservice S.A.S., NIT 901.250.979-5, Calle 18 No. 103B-43, oficina 202, Bogotá, Colombia. Opera en España como IA-WebDesign.
+
+## Contacto
+- WhatsApp: +34 685 75 83 21 (escribe «INFO»)
+- Correo: chat@ia-webdesing.es
