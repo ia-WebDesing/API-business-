@@ -1,6 +1,6 @@
 # APPI Business · IA-WebDesign
 
-> APPI Business es el asistente de IA de IA-WebDesign para autónomos, pequeños negocios y pymes de hasta 10 personas en España. Atiende consultas por WhatsApp, Telegram y correo, organiza citas y recordatorios, prepara presupuestos con las tarifas del negocio y envía resúmenes. Las consultas que necesitan criterio profesional se derivan a una persona. IA-WebDesign trabaja desde Castellón de la Plana (Comunidad Valenciana) para toda España.
+> APPI Business es el asistente de IA de IA-WebDesign para autónomos, pequeños negocios y pymes de hasta 10 personas en España. Atiende consultas por WhatsApp, Telegram y correo, organiza citas y recordatorios, prepara presupuestos con las tarifas del negocio y envía resúmenes. Las consultas que necesitan criterio profesional se derivan a una persona. IA-WebDesign trabaja para pymes y autónomos de toda España; titular: Blackservice S.A.S., Calle 18 No. 103B-43, oficina 202, Bogotá (Colombia).
 
 ## Qué hace
 - Responde por WhatsApp, Telegram y correo 24/7, también fuera de horario, con la información y el tono de cada negocio.
