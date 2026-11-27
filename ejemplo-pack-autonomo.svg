@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="2240" viewBox="0 0 1120 2240" role="img" aria-labelledby="title desc">
+<title id="title">Ejemplo ilustrativo del Pack Autónomo de Api</title>
+<desc id="desc">Tarjeta de ejemplo con implantación de 499 euros, suscripción de 85 euros al mes, hasta 1.000 mensajes estándar de atención por WhatsApp, agenda y recordatorios, IVA incluido y sin permanencia.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111a28"/><stop offset="1" stop-color="#070b12"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4d994"/><stop offset="1" stop-color="#b98c3f"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#151f2d"/><stop offset="1" stop-color="#0d141e"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".38"/></filter>
+</defs>
+<rect width="1120" height="2240" rx="52" fill="url(#bg)"/>
+<rect x="34" y="34" width="1052" height="2172" rx="42" fill="none" stroke="#c5a15a" stroke-opacity=".6" stroke-width="2"/>
+<circle cx="90" cy="113" r="28" fill="#c5a15a" fill-opacity=".12" stroke="#d8b76c" stroke-opacity=".7"/>
+<path d="M77 113h26M90 100v26" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+<text x="144" y="109" fill="#f4f6f8" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="700" letter-spacing=".4">Api</text>
+<text x="145" y="145" fill="#aeb8c4" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" letter-spacing="3">APIBUSINESS.APP</text>
+<text x="88" y="286" fill="#e4c77f" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="4">EJEMPLO ILUSTRATIVO</text>
+<text x="88" y="368" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="60" font-weight="700">Pack Autónomo</text>
+<text x="88" y="424" fill="#b9c2ce" font-family="Arial,Helvetica,sans-serif" font-size="27">Una referencia visual del plan y sus condiciones.</text>
+<rect x="72" y="502" width="976" height="1038" rx="34" fill="url(#panel)" stroke="#c5a15a" stroke-opacity=".52" stroke-width="2" filter="url(#shadow)"/>
+<text x="120" y="594" fill="#e4c77f" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" letter-spacing="3">INVERSIÓN DEL PACK</text>
+<text x="120" y="700" fill="#d5dbe3" font-family="Arial,Helvetica,sans-serif" font-size="27">Implantación personalizada</text>
+<text x="120" y="792" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="700">499 €</text>
+<text x="120" y="836" fill="#aeb8c4" font-family="Arial,Helvetica,sans-serif" font-size="22">pago único</text>
+<path d="M120 892h880" stroke="#fff" stroke-opacity=".12" stroke-width="2"/>
+<text x="120" y="980" fill="#d5dbe3" font-family="Arial,Helvetica,sans-serif" font-size="27">Suscripción mensual de Api</text>
+<text x="120" y="1075" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="700">85 €</text>
+<text x="310" y="1074" fill="#aeb8c4" font-family="Arial,Helvetica,sans-serif" font-size="25">/ mes</text>
+<g font-family="Arial,Helvetica,sans-serif">
+  <circle cx="139" cy="1193" r="22" fill="#c5a15a" fill-opacity=".15" stroke="#d8b76c" stroke-opacity=".65"/>
+  <path d="m129 1193 7 7 14-16" fill="none" stroke="#f1d48c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="184" y="1202" fill="#edf1f5" font-size="25">Hasta 1.000 mensajes estándar de atención</text>
+  <text x="184" y="1240" fill="#aeb8c4" font-size="21">por WhatsApp al mes, según las condiciones del pack</text>
+  <circle cx="139" cy="1320" r="22" fill="#c5a15a" fill-opacity=".15" stroke="#d8b76c" stroke-opacity=".65"/>
+  <path d="m129 1320 7 7 14-16" fill="none" stroke="#f1d48c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="184" y="1329" fill="#edf1f5" font-size="25">1 usuario · agenda y recordatorios</text>
+  <circle cx="139" cy="1415" r="22" fill="#c5a15a" fill-opacity=".15" stroke="#d8b76c" stroke-opacity=".65"/>
+  <path d="m129 1415 7 7 14-16" fill="none" stroke="#f1d48c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="184" y="1424" fill="#edf1f5" font-size="25">Soporte: respuesta en máximo 24 horas</text>
+</g>
+<rect x="72" y="1602" width="976" height="164" rx="26" fill="#c5a15a" fill-opacity=".09" stroke="#c5a15a" stroke-opacity=".34"/>
+<text x="120" y="1670" fill="#f2d58e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">IVA incluido · Sin permanencia</text>
+<text x="120" y="1722" fill="#c5ccd5" font-family="Arial,Helvetica,sans-serif" font-size="21">Bloques adicionales y condiciones de mensajería</text>
+<text x="120" y="1755" fill="#c5ccd5" font-family="Arial,Helvetica,sans-serif" font-size="21">se explican antes de su aplicación.</text>
+<text x="88" y="1930" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700">Configurado para tu forma de trabajar.</text>
+<text x="88" y="1984" fill="#b9c2ce" font-family="Arial,Helvetica,sans-serif" font-size="24">Alcance, canales y permisos se acuerdan antes de iniciar.</text>
+<path d="M88 2074h944" stroke="#c5a15a" stroke-opacity=".35" stroke-width="2"/>
+<text x="88" y="2134" fill="#9ca8b6" font-family="Arial,Helvetica,sans-serif" font-size="19">Ejemplo gráfico; consulta la oferta vigente y sus condiciones en apibusiness.app.</text>
+</svg>
