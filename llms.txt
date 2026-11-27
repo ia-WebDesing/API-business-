@@ -1,37 +1,38 @@
-# APPI Business · IA-WebDesign
+# apibusiness.app — Api
 
-> APPI Business es el asistente de IA de IA-WebDesign para autónomos, pequeños negocios y pymes de hasta 10 personas en España. Atiende consultas por WhatsApp, Telegram y correo, organiza citas y recordatorios, prepara presupuestos con las tarifas del negocio y envía resúmenes. Las consultas que necesitan criterio profesional se derivan a una persona. IA-WebDesign trabaja para pymes y autónomos de toda España; titular: Blackservice S.A.S., Calle 18 No. 103B-43, oficina 202, Bogotá (Colombia).
+> Api es el asistente de apibusiness.app para autónomos y pymes de hasta 10 personas en España. Atiende consultas por WhatsApp, Telegram y correo, organiza solicitudes de citas y recordatorios y prepara presupuestos con la información y las tarifas aprobadas por cada negocio. Cuando una consulta necesita criterio profesional o falta información, la deriva a una persona.
 
-## Qué hace
-- Responde por WhatsApp, Telegram y correo 24/7, también fuera de horario, con la información y el tono de cada negocio.
-- Entiende notas de voz y puede responder en el idioma del cliente.
-- Gestiona solicitudes de cita, cambios, cancelaciones, recordatorios y huecos libres con un calendario conectado y autorizado.
-- Prepara presupuestos según las tarifas acordadas y puede consultar stock si los datos están actualizados.
-- Envía campañas y avisos de promociones solo a clientes que lo han aceptado (opt-in en WhatsApp; bajas respetadas en correo).
-- Deriva a una persona las consultas incompletas o que requieren valoración, incluidas las clínicas o de salud.
+## Qué ofrece
+- Atención a clientes por WhatsApp, Telegram y correo, con información y tono configurados para cada negocio.
+- Comprensión de notas de voz y respuestas en el idioma del cliente, según la configuración acordada.
+- Organización de solicitudes de cita, cambios, cancelaciones y recordatorios con un calendario conectado y autorizado.
+- Preparación de presupuestos según los servicios, productos y precios aprobados por el negocio.
+- Consulta de inventario cuando la conexión está configurada y los datos están actualizados.
+- Resúmenes de actividad y derivación a una persona cuando hace falta información o criterio profesional.
 
 ## Para quién
-- Centros de estética, peluquerías y barberías, tratamientos y terapias, farmacias, talleres mecánicos, transporte, restaurantes y comercios.
+- Autónomos, pequeños negocios y pymes de hasta 10 personas.
+- Sectores: estética, peluquerías y barberías, terapias, farmacias, talleres, transporte, restaurantes, comercios y otros servicios.
 
-## Precios (IVA incluido, sin permanencia)
-- Pack Autónomo: configuración desde 298 € y suscripción desde 45 €/mes.
-- Pack Negocio (hasta 3 personas): configuración desde 498 € y suscripción desde 75 €/mes.
-- Pack Pyme (hasta 10 personas): configuración desde 798 € y suscripción desde 149 €/mes.
-- El precio final depende del alcance acordado; cualquier coste externo se detalla antes de empezar.
+## Packs y precios orientativos
+- Autónomo: configuración desde 298 € y suscripción desde 45 €/mes.
+- Negocio: configuración desde 498 € y suscripción desde 75 €/mes; hasta 3 personas.
+- Pyme: configuración desde 798 € y suscripción desde 149 €/mes; hasta 10 personas.
+- Los precios publicados incluyen IVA. El precio final depende del alcance acordado y los costes externos se detallan antes de empezar.
 
-## Qué no promete
-- No garantiza posiciones en Google ni resultados comerciales concretos.
+## Límites y transparencia
+- No se garantizan posiciones en buscadores ni resultados comerciales concretos.
+- La configuración, las conexiones y el alcance se acuerdan con cada negocio; las funciones que dependen de una integración requieren autorización y pruebas.
+- SEO/SEM, creación web y gestión de redes se contratan por separado cuando corresponda.
 
 ## Páginas principales
-- [Inicio](https://www.apibusiness.app/): funciones, sectores, packs y precios.
-- [Preguntas frecuentes](https://www.apibusiness.app/preguntas-frecuentes.html): 24 respuestas sobre funciones, WhatsApp, citas, precios y privacidad.
-- [Política de privacidad](https://www.apibusiness.app/privacidad.html)
+- [Inicio](https://www.apibusiness.app/): información del servicio, sectores y packs.
+- [Preguntas frecuentes](https://www.apibusiness.app/preguntas-frecuentes.html): respuestas sobre funcionamiento, canales, citas, precios y privacidad.
 - [Aviso legal](https://www.apibusiness.app/aviso-legal.html)
-- [Política de cookies](https://www.apibusiness.app/cookies.html)
+- [Privacidad](https://www.apibusiness.app/privacidad.html)
+- [Cookies](https://www.apibusiness.app/cookies.html)
 
-## Empresa
-- Titular: Blackservice S.A.S., NIT 901.250.979-5, Calle 18 No. 103B-43, oficina 202, Bogotá, Colombia. Opera en España como IA-WebDesign.
-
-## Contacto
-- WhatsApp: +34 685 75 83 21 (escribe «INFO»)
-- Correo: chat@ia-webdesing.es
+## Entidad y contacto
+- Titular: Blackservice S.A.S., NIT 901.250.979-5, Calle 18 No. 103B-43, oficina 202, Bogotá, Colombia.
+- WhatsApp: +34 685 75 83 21 (escribe «INFO»).
+- Correo: [info@apibusiness.app](mailto:info@apibusiness.app).
