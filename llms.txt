@@ -21,8 +21,8 @@
 - Los precios publicados incluyen IVA. El precio final depende del alcance acordado y los costes externos se detallan antes de empezar.
 
 ## Límites y transparencia
-- No se garantizan posiciones en buscadores ni resultados comerciales concretos.
-- La configuración, las conexiones y el alcance se acuerdan con cada negocio; las funciones que dependen de una integración requieren autorización y pruebas.
+- El equipo utiliza procesos automatizados de análisis SEO que trabajan 24/7 para identificar mejoras y acercar cada proyecto a los primeros resultados de Google; la posición final depende de Google y la competencia, por lo que no se garantiza un puesto concreto.
+- La prioridad es ayudarte a conservar el número de WhatsApp que tus clientes ya conocen: usamos la API oficial de Meta, revisamos permisos, consentimiento y reglas de mensajería para reducir riesgos. Meta mantiene sus propios controles y no se puede prometer ausencia total de restricciones. La configuración, las conexiones y el alcance se acuerdan con cada negocio.
 - SEO/SEM, creación web y gestión de redes se contratan por separado cuando corresponda.
 
 ## Páginas principales
@@ -31,6 +31,10 @@
 - [Aviso legal](https://www.apibusiness.app/aviso-legal.html)
 - [Privacidad](https://www.apibusiness.app/privacidad.html)
 - [Cookies](https://www.apibusiness.app/cookies.html)
+
+- [Asistente para peluquerías y estética](https://www.apibusiness.app/asistente-ia-para-peluquerias-y-estetica.html): atención, agenda, recordatorios e integraciones en desarrollo.
+- [Asistente para talleres mecánicos](https://www.apibusiness.app/asistente-ia-para-talleres-mecanicos.html): consultas, presupuestos y seguimiento.
+- [Asistente para clínicas](https://www.apibusiness.app/asistente-ia-para-clinicas.html): atención administrativa y derivación de consultas clínicas.
 
 ## Entidad y contacto
 - Titular: Blackservice S.A.S., NIT 901.250.979-5, Calle 18 No. 103B-43, oficina 202, Bogotá, Colombia.
