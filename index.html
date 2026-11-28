@@ -619,6 +619,11 @@ body main>section,body main>section.section,body main>section.section.alt,body m
 @media(max-width:780px){.roi-featured-cases{grid-template-columns:1fr 1fr}.roi-featured-cases .roi-case:last-child{grid-column:1/-1}.roi-archive-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.roi-featured-cases,.roi-archive-grid{grid-template-columns:1fr}.roi-featured-cases .roi-case:last-child{grid-column:auto}.roi-featured-cases .roi-case{padding:14px}.roi-more-cases{padding:13px}.roi-more-cases>summary{font-size:.87rem}}
 </style>
+<style id="roi-refined-style">
+.roi-featured-cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:20px 0 14px}.roi-featured-cases .roi-case{grid-column:auto!important}.roi-more-cases{margin:14px 0 20px;padding:15px 17px;border:1px solid rgba(197,161,90,.38);border-radius:15px;background:rgba(255,255,255,.025)}.roi-more-cases>summary{cursor:pointer;color:#efd08f;font-weight:800;line-height:1.4}.roi-archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:15px}.roi-archive-grid .roi-case{grid-column:auto!important}.roi-archive-grid .roi-case small{min-height:0}.roi-case-summary{display:flex;flex-direction:column;gap:5px;margin:3px 0 15px;padding:12px 14px;border-left:3px solid #c5a15a;border-radius:0 11px 11px 0;background:rgba(197,161,90,.08)}.roi-case-summary strong{color:#f4d694;font-size:.88rem;line-height:1.4}.roi-case-summary span{color:#c2ccda;font-size:.76rem;line-height:1.4}.roi-case-summary a{color:#f1ce83;font-size:.76rem;font-weight:750}.roi-data-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.roi-data-fields[hidden]{display:none}.roi-cta{display:inline-block;margin-top:11px;padding:11px 17px;border-radius:999px;background:linear-gradient(135deg,#e2c27d,#bb9250);color:#111827!important;font-weight:850;text-decoration:none!important}.roi-bottom-line{padding:19px 20px}.roi-phone-body{gap:2.5%}
+@media(max-width:780px){.roi-featured-cases{grid-template-columns:1fr 1fr}.roi-featured-cases .roi-case:last-child{grid-column:1/-1}.roi-archive-grid{grid-template-columns:1fr 1fr}.roi-simulator{grid-template-columns:1fr}}
+@media(max-width:520px){.roi-featured-cases,.roi-archive-grid,.roi-data-fields{grid-template-columns:1fr}.roi-featured-cases .roi-case:last-child{grid-column:auto}.roi-featured-cases .roi-case{padding:14px}.roi-more-cases{padding:13px}.roi-more-cases>summary{font-size:.87rem}.roi-bottom-line{padding:15px}.roi-bottom-line p{font-size:.86rem}.roi-cta{display:block;text-align:center}}
+</style>
 </head>
 <body>
 <div aria-hidden="true" id="matrix-rain-layer"></div>
@@ -796,199 +801,110 @@ body main>section,body main>section.section,body main>section.section.alt,body m
 <a class="pack-cta" href="https://wa.me/34685758321?text=INFO">Consultar Pyme</a>
 </article>
 </div>
-<div class="wa-calc roi-calc" aria-label="Casos publicados y simulador de escenarios por sector">
+<div class="wa-calc roi-calc" aria-label="Casos publicados y calculadora orientativa por actividad">
   <div class="roi-intro">
-    <span class="roi-kicker">Casos reales publicados por Meta y WhatsApp Business</span>
-    <h3>Cuando respondes a tiempo, una consulta puede convertirse en una cita o una venta.</h3>
-    <p>Empresas de estética, clínicas y restaurantes ya han publicado resultados obtenidos con conversaciones, reservas y campañas en Meta. Mira ejemplos cercanos a tu negocio y prueba un escenario con tus propias cifras.</p>
+    <span class="roi-kicker">Casos publicados de Meta y WhatsApp Business</span>
+    <h3>Una respuesta a tiempo puede abrir la puerta a una cita o una venta.</h3>
+    <p>Te mostramos ejemplos de negocios cercanos a los que queremos ayudar: atención, reservas y ventas por conversación.</p>
   </div>
   <div class="roi-featured-cases" aria-label="Tres casos destacados">
     <article class="roi-case roi-case-featured">
-      <span class="roi-case-category">Estética · pequeño negocio · WhatsApp</span>
-      <strong>15 %</strong><p>de 40 solicitudes acabaron en citas confirmadas en dos semanas; la profesional dice que el agente gestionó más del 60 % de sus comunicaciones.</p>
-      <small>Un negocio de maquillaje nupcial, con precios y calendario conectados.</small>
-      <a href="https://www.facebook.com/business/success/madhulika-enterprises-bm-success-story" target="_blank" rel="noopener noreferrer">Caso publicado por Meta ↗</a>
+      <span class="roi-case-category">Autónoma de belleza · WhatsApp</span>
+      <strong>15 %</strong><p>de las consultas acabaron en citas confirmadas durante el periodo del caso.</p>
+      <small>Un pequeño negocio conectó su asistente con precios y calendario.</small>
+      <a href="https://www.facebook.com/business/success/madhulika-enterprises-bm-success-story" target="_blank" rel="noopener noreferrer">Ver caso en Meta ↗</a>
     </article>
     <article class="roi-case roi-case-featured">
-      <span class="roi-case-category">Clínica estética · Meta Business Agent</span>
-      <strong>+38 %</strong><p>de citas y <b>+58 % en ingresos por ventas</b> frente a su proceso habitual.</p>
-      <small>Prueba de dos semanas con un agente en Messenger; ingresos autodeclarados.</small>
-      <a href="https://www.facebook.com/business/success/diva-beauty-center-bm-case-study" target="_blank" rel="noopener noreferrer">Caso publicado por Meta ↗</a>
+      <span class="roi-case-category">Clínicas dentales en España · WhatsApp</span>
+      <strong>90 %</strong><p>de confirmación de citas con mensajes de servicio; también redujo el trabajo operativo frente a SMS.</p>
+      <small>Vitaldent comunicó estos resultados en su red de 390 clínicas.</small>
+      <a href="https://www.facebook.com/business/success/vitaldent-bm-success-story" target="_blank" rel="noopener noreferrer">Ver caso en Meta ↗</a>
     </article>
     <article class="roi-case roi-case-featured">
-      <span class="roi-case-category">Restaurante · pedidos y fidelización</span>
-      <strong>+72 %</strong><p>en ventas de un año a otro, atribuido por la empresa a sus campañas de WhatsApp; también comunicó un retorno de <b>6,3×</b>.</p>
-      <small>Campañas y fidelización conectadas con su CRM; empresa de gran tamaño.</small>
-      <a href="https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
+      <span class="roi-case-category">Bicis y movilidad eléctrica · Messenger</span>
+      <strong>3,98 %</strong><p>de conversión de conversación a compra, frente al 2,73 % del grupo de comparación.</p>
+      <small>Prueba de ventas de vehículos eléctricos; no mide reparaciones.</small>
+      <a href="https://www.facebook.com/business/success/xe-dien-move-bm-case-study" target="_blank" rel="noopener noreferrer">Ver caso en Meta ↗</a>
     </article>
   </div>
   <details class="roi-more-cases">
-    <summary>Ver más casos de clínicas, talleres, restaurantes y comercio</summary>
+    <summary>Ver más ejemplos de clínicas, talleres, restaurantes y comercio</summary>
     <div class="roi-archive-grid">
-      <article class="roi-case">
-        <span class="roi-case-category">Estética · Instagram Reels y Messenger</span>
-        <strong>+35 %</strong><p>de leads y <b>−31 % en coste por lead</b> con una nueva creatividad en anuncios de Reels que abrían conversaciones en Instagram o Messenger.</p>
-        <small>Comparación A/B frente a su creatividad habitual.</small>
-        <a href="https://www.facebook.com/business/success/naiss-clinic" target="_blank" rel="noopener noreferrer">Caso publicado por Meta ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Clínica estética · Messenger</span>
-        <strong>4,6×</strong><p>más leads y <b>−76 % en coste por lead</b> al optimizar anuncios de Messenger para captar contactos.</p>
-        <small>Prueba A/B; el equipo de la clínica atendía y ayudaba a reservar.</small>
-        <a href="https://www.facebook.com/business/success/labx-clinic-bm-case-study" target="_blank" rel="noopener noreferrer">Caso publicado por Meta ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Odontología · WhatsApp</span>
-        <strong>6×</strong><p>las reservas de citas y <b>−38 % en coste por lead</b> frente al año anterior.</p>
-        <small>Un proveedor dental usó anuncios que abrían WhatsApp y atención automatizada.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/beame/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Hospitales · reservas y asistencia</span>
-        <strong>+8 %</strong><p>en reservas de citas y <b>+36 % en autocheck-in</b> tras añadir indicaciones a recordatorios de WhatsApp.</p>
-        <small>Resultados comunicados tras dos meses de medición.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/siloam-hospitals/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Salud pública · recordatorios</span>
-        <strong>150.000</strong><p>confirmaciones de citas por WhatsApp; la iniciativa también comunicó que ayudó a recuperar miles de reservas.</p>
-        <small>Departamento de Salud de Maceió; servicio público a gran escala.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/municipal-health-department-maceio/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Taller y posventa de automoción · WhatsApp</span>
-        <strong>40×</strong><p>retorno comunicado con recordatorios personalizados de mantenimiento; conversión de <b>5× la del call center</b>.</p>
-        <small>Concesionario con CRM, datos de mantenimiento y clientes que aceptaron recibir avisos.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/toyota-zento/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Restaurantes · campañas en Facebook e Instagram</span>
-        <strong>−82 %</strong><p>en coste por conversión incremental de reservas al añadir anuncios de colaboración con creadores.</p>
-        <small>LaFork comparó anuncios con creadores frente a su campaña habitual; no es un resultado de chatbot.</small>
-        <a href="https://www.facebook.com/business/success/thefork" target="_blank" rel="noopener noreferrer">Caso publicado por Meta ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Belleza · reservas presenciales</span>
-        <strong>+21 %</strong><p>en reservas de tratamientos y <b>+17 % en ventas totales</b>.</p>
-        <small>Tres meses; reservas por WhatsApp frente a teléfono y tienda.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/yves-rocher/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Belleza · reservas de servicios</span>
-        <strong>+30 %</strong><p>en reservas de depilación de cejas y labio frente al mismo periodo del año anterior.</p>
-        <small>El caso atribuye el resultado a su experiencia de atención en WhatsApp.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/benefit-cosmetics/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Automoción · Facebook e Instagram</span>
-        <strong>+17 %</strong><p>en leads y <b>−15 % en coste por lead</b> en una prueba de campañas automatizadas de captación.</p>
-        <small>Ford Pro; campaña B2B de vehículos comerciales, no un taller de reparación.</small>
-        <a href="https://www.facebook.com/business/success/ford-pro-netherlands" target="_blank" rel="noopener noreferrer">Caso publicado por Meta ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Comercio online · conversión</span>
-        <strong>10×</strong><p>conversiones de nuevos compradores y <b>6×</b> de carritos abandonados.</p>
-        <small>Ocho meses frente a notificaciones push y correo.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/6thstreet-2/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Comercio · compra conversacional</span>
-        <strong>3×</strong><p>la conversión de sus canales tradicionales de ecommerce.</p>
-        <small>Experiencia de compra completa en WhatsApp; seis semanas.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/magalu/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Telecomunicaciones · ventas</span>
-        <strong>3×</strong><p>las ventas mensuales medias de clientes alcanzados mediante tecnologías de Meta.</p>
-        <small>Campaña de captación de siete meses; no es un negocio local.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/movistar-mexico/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Educación · leads y citas</span>
-        <strong>+85 %</strong><p>en tasa de conversión de lead a cita usando la plataforma de agentes de Meta en WhatsApp y anuncios click-to-WhatsApp.</p>
-        <small>Prueba breve frente al proceso habitual del centro de contacto.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/aliat-universidades/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <article class="roi-case">
-        <span class="roi-case-category">Comercio · ventas por WhatsApp</span>
-        <strong>Hasta 3×</strong><p>la conversión de pedidos posteriores a campaña frente a su método habitual.</p>
-        <small>Distribuidor de bebidas que atiende a pequeños comercios; prueba de seis meses.</small>
-        <a href="https://whatsappbusiness.com/resources/success-stories/ccu/" target="_blank" rel="noopener noreferrer">Caso publicado por WhatsApp Business ↗</a>
-      </article>
-      <div class="roi-case roi-case-no-match">
-        <span class="roi-case-category">Bicicleterías y patinetes</span>
-        <strong>Un mercado por medir</strong><p>No encontramos un caso público con cifras verificables de una bicicletería o taller de patinetes.</p>
-        <small>Por eso la calculadora permite probar un escenario propio, claramente marcado como hipótesis y no como dato del sector.</small>
-      </div>
+      <article class="roi-case"><span class="roi-case-category">Restaurante · WhatsApp</span><strong>+72 %</strong><p>en ventas interanuales, atribuidas por la empresa a sus campañas y fidelización por WhatsApp.</p><small>Domino’s Indonesia · 2023 frente a 2022; gran cadena con CRM.</small><a href="https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/" target="_blank" rel="noopener noreferrer">Ver caso ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Bicicletas eléctricas · Instagram Reels</span><strong>−53 %</strong><p>en coste por compra al añadir anuncios Reels con las prácticas creativas recomendadas.</p><small>Fiido · prueba A/B de ventas online, no de reparaciones ni de asistente IA.</small><a href="https://www.facebook.com/business/success/fiido-electric-bike" target="_blank" rel="noopener noreferrer">Ver caso en Meta ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Taller y posventa · WhatsApp</span><strong>40×</strong><p>retorno sobre la inversión comunicado con recordatorios personalizados de mantenimiento.</p><small>Toyota Zento · concesionario con CRM; no es un taller de bicicletas.</small><a href="https://whatsappbusiness.com/resources/success-stories/toyota-zento/" target="_blank" rel="noopener noreferrer">Ver caso ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Clínica estética · Messenger</span><strong>+38 %</strong><p>de citas frente al proceso habitual; la empresa también comunicó +58 % en ingresos.</p><small>Prueba de dos semanas; los ingresos fueron comunicados por la empresa.</small><a href="https://www.facebook.com/business/success/diva-beauty-center-bm-case-study" target="_blank" rel="noopener noreferrer">Ver caso en Meta ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Clínica estética · Instagram y Messenger</span><strong>+35 %</strong><p>de leads con anuncios Reels que abrían una conversación frente a su práctica habitual.</p><small>Prueba A/B; mide leads, no citas o ventas.</small><a href="https://www.facebook.com/business/success/naiss-clinic" target="_blank" rel="noopener noreferrer">Ver caso en Meta ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Clínica · Messenger</span><strong>4,6×</strong><p>más leads y 76 % menos coste por lead con optimización de anuncios.</p><small>El personal de la clínica continuaba la conversación y ayudaba a reservar.</small><a href="https://www.facebook.com/business/success/labx-clinic-bm-case-study" target="_blank" rel="noopener noreferrer">Ver caso en Meta ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Odontología · WhatsApp</span><strong>6×</strong><p>más reservas de citas y 38 % menos coste por lead frente al año anterior.</p><small>Proveedor dental internacional; combinación de anuncios y atención automatizada.</small><a href="https://whatsappbusiness.com/resources/success-stories/beame/" target="_blank" rel="noopener noreferrer">Ver caso ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Hospitales · reservas y asistencia</span><strong>+8 %</strong><p>en reservas tras lanzar la experiencia de chat; +36 % en autocheck-in con avisos.</p><small>Red hospitalaria de Indonesia; resultados comunicados por la empresa.</small><a href="https://whatsappbusiness.com/resources/success-stories/siloam-hospitals/" target="_blank" rel="noopener noreferrer">Ver caso ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Cosmética y tratamientos · WhatsApp</span><strong>+21 %</strong><p>en reservas presenciales de tratamientos y +17 % en ventas totales.</p><small>Tres meses; comparación con reservas por teléfono y en tienda.</small><a href="https://whatsappbusiness.com/resources/success-stories/yves-rocher/" target="_blank" rel="noopener noreferrer">Ver caso ↗</a></article>
+      <article class="roi-case"><span class="roi-case-category">Belleza · WhatsApp</span><strong>+30 %</strong><p>en reservas de depilación de cejas y labio, frente al mismo periodo del año anterior.</p><small>Resultado comunicado por la empresa; experiencia de cita y atención automatizada.</small><a href="https://whatsappbusiness.com/resources/success-stories/benefit-cosmetics/" target="_blank" rel="noopener noreferrer">Ver caso ↗</a></article>
     </div>
-    <p class="roi-source-note">Las cifras vienen de casos publicados por las plataformas; la mayoría son resultados comunicados por las propias empresas, no auditorías independientes ni resultados garantizados. Cada uno conserva su periodo, canal y comparación originales.</p>
+    <p class="roi-source-note">Son casos concretos publicados por las plataformas. Algunos resultados los comunicaron las propias empresas y pueden depender del sector, el periodo, la campaña y la configuración utilizada.</p>
   </details>
   <div class="roi-bottom-line">
-    <strong>Lo importante no es copiar el resultado de una gran marca, sino ver qué oportunidad se te está escapando a ti.</strong>
-    <p>Elige tu sector, pon tus números y comprueba cómo se compara el valor del escenario con la cuota de Api. Después, si encaja, configuramos juntos una atención que lleve cada consulta al siguiente paso.</p>
+    <strong>La oportunidad está en tu propio negocio.</strong>
+    <p>Elige tu actividad, pon tus cifras y mira cómo podría ayudarte Api a que más consultas lleguen al siguiente paso. Si te encaja, lo vemos juntos y buscamos la mejor forma de ponerlo a trabajar para ti.</p>
+    <a class="roi-cta" href="https://wa.me/34685758321?text=Quiero%20ver%20como%20Api%20puede%20ayudar%20a%20mi%20negocio" target="_blank" rel="noopener noreferrer">Hablemos de tu negocio</a>
   </div>
   <div class="roi-simulator">
     <div class="roi-form">
-      <span class="roi-kicker">Tu negocio, tus números</span>
-      <h4>Explora un escenario según tu actividad</h4>
-      <p class="roi-form-intro">La referencia publicada no cambia; solo cambian los datos de tu negocio. Es una comparación orientativa, no una previsión de Api.</p>
-      <label class="roi-field">¿A qué se dedica tu negocio?
+      <span class="roi-kicker">Una cuenta orientativa con tus números</span>
+      <h4>¿Qué oportunidad quieres explorar?</h4>
+      <label class="roi-field">Actividad de tu negocio
         <select id="roiSector">
-          <option value="aesthetics" selected>Estética, peluquería y belleza</option>
-          <option value="clinic">Clínica, odontología y salud</option>
+          <option value="beauty" selected>Estética, peluquería y belleza</option>
+          <option value="clinic">Clínica u odontología</option>
           <option value="restaurant">Restaurante y hostelería</option>
-          <option value="workshop">Taller mecánico y automoción</option>
-          <option value="bike">Bicicletería y patinetes</option>
-          <option value="other">Otro comercio o servicio</option>
+          <option value="mobility">Venta de bicicletas o patinetes eléctricos</option>
+          <option value="workshop">Taller o reparación</option>
         </select>
       </label>
-      <label class="roi-field">Caso o referencia publicada
-        <select id="roiBenchmark"></select>
-      </label>
-      <div id="roiFieldsSales" class="roi-data-fields" hidden>
-        <label class="roi-field">Facturación mensual habitual (€)
-          <input id="roiRevenue" type="number" min="0" max="100000000" step="100" value="3000" inputmode="decimal">
-          <small>Introduce la cifra de tu negocio.</small>
+      <div class="roi-case-summary" aria-live="polite">
+        <strong id="roiCaseMetric">Caso publicado: 15 % de las consultas acabaron en citas confirmadas.</strong>
+        <span id="roiCaseContext">Madhulika Enterprises · WhatsApp · pequeño negocio de belleza · periodo de dos semanas.</span>
+        <a id="roiCaseLink" href="https://www.facebook.com/business/success/madhulika-enterprises-bm-success-story" target="_blank" rel="noopener noreferrer">Ver fuente ↗</a>
+      </div>
+      <div id="roiInputsBeauty" class="roi-data-fields">
+        <label class="roi-field">Consultas nuevas al mes
+          <input id="roiBeautyLeads" type="number" min="0" max="1000000" step="1" value="40" inputmode="numeric">
+        </label>
+        <label class="roi-field">Valor medio de una cita (€)
+          <input id="roiBeautyTicket" type="number" min="0" max="1000000" step="1" value="45" inputmode="decimal">
         </label>
       </div>
-      <div id="roiFieldsBookings" class="roi-data-fields" hidden>
-        <label class="roi-field">Reservas o servicios al mes
-          <input id="roiBookings" type="number" min="0" max="1000000" step="1" value="24" inputmode="numeric">
+      <div id="roiInputsClinic" class="roi-data-fields" hidden>
+        <label class="roi-field">Citas con aviso de confirmación al mes
+          <input id="roiClinicAppointments" type="number" min="0" max="1000000" step="1" value="100" inputmode="numeric">
         </label>
-        <label class="roi-field">Importe medio por reserva o servicio (€)
-          <input id="roiBookingPrice" type="number" min="0" max="1000000" step="1" value="45" inputmode="decimal">
-        </label>
-      </div>
-      <div id="roiFieldsLeads" class="roi-data-fields" hidden>
-        <label class="roi-field">Consultas o leads al mes
-          <input id="roiLeads" type="number" min="0" max="1000000" step="1" value="40" inputmode="numeric">
-        </label>
-        <label class="roi-field">De cada 100 consultas, ¿cuántas acaban en cita o venta?
-          <input id="roiCloseRate" type="number" min="0" max="100" step="1" value="30" inputmode="decimal">
-          <small>Usa tu porcentaje habitual si lo conoces.</small>
-        </label>
-        <label class="roi-field">Valor medio de una cita o venta (€)
-          <input id="roiLeadTicket" type="number" min="0" max="1000000" step="1" value="79" inputmode="decimal">
+        <label class="roi-field">Valor medio de la cita (€)
+          <input id="roiClinicTicket" type="number" min="0" max="1000000" step="1" value="79" inputmode="decimal">
         </label>
       </div>
-      <div id="roiFieldsConversion" class="roi-data-fields" hidden>
-        <label class="roi-field">Consultas recibidas al mes
-          <input id="roiConversionLeads" type="number" min="0" max="1000000" step="1" value="40" inputmode="numeric">
-        </label>
-        <label class="roi-field">Valor medio de una cita o venta (€)
-          <input id="roiConversionTicket" type="number" min="0" max="1000000" step="1" value="79" inputmode="decimal">
+      <div id="roiInputsRestaurant" class="roi-data-fields" hidden>
+        <label class="roi-field">Ventas mensuales habituales (€)
+          <input id="roiRestaurantSales" type="number" min="0" max="100000000" step="100" value="10000" inputmode="decimal">
         </label>
       </div>
-      <div id="roiFieldsManual" class="roi-data-fields" hidden>
+      <div id="roiInputsMobility" class="roi-data-fields" hidden>
+        <label class="roi-field">Conversaciones con posibles compradores al mes
+          <input id="roiMobilityChats" type="number" min="0" max="1000000" step="1" value="100" inputmode="numeric">
+        </label>
+        <label class="roi-field">Precio medio de una bicicleta o patinete (€)
+          <input id="roiMobilityTicket" type="number" min="0" max="1000000" step="1" value="1200" inputmode="decimal">
+        </label>
+      </div>
+      <div id="roiInputsWorkshop" class="roi-data-fields" hidden>
         <label class="roi-field">Trabajos adicionales que quieres explorar al mes
-          <input id="roiJobs" type="number" min="0" max="10000" step="1" value="2" inputmode="numeric">
-          <small>Es una hipótesis tuya; no hay un porcentaje publicado para este sector.</small>
+          <input id="roiWorkshopJobs" type="number" min="0" max="10000" step="1" value="2" inputmode="numeric">
+          <small>Es una hipótesis para que pruebes tus propios números; no hay un dato publicado de reparación de bicis o patinetes.</small>
         </label>
-        <label class="roi-field">Importe medio por reparación (€)
-          <input id="roiJobTicket" type="number" min="0" max="1000000" step="1" value="50" inputmode="decimal">
+        <label class="roi-field">Importe medio del trabajo (€)
+          <input id="roiWorkshopTicket" type="number" min="0" max="1000000" step="1" value="50" inputmode="decimal">
         </label>
       </div>
-      <label class="roi-field roi-plan-row">Plan mensual
+      <label class="roi-field">Plan mensual de Api
         <select id="roiPlan">
           <option value="85|1000" selected>Autónomo · 85 €/mes</option>
           <option value="159|1500">Empresa · 159 €/mes</option>
@@ -996,51 +912,35 @@ body main>section,body main>section.section,body main>section.section.alt,body m
         </select>
       </label>
       <div class="roi-result-card" aria-live="polite" aria-atomic="true">
-        <span class="roi-result-label" id="roiResultEyebrow">Escenario ilustrativo</span>
-        <strong id="roiResultValue">+410 €/mes</strong>
-        <p id="roiResultDetail">Valor bruto equivalente a más reservas, si el resultado del caso se repitiera.</p>
-        <span id="roiResultContext">Caso publicado; no es una previsión de Api ni una promesa de resultado.</span>
+        <span id="roiResultEyebrow">Escenario usando la tasa del caso como referencia</span>
+        <strong id="roiResultValue">≈ 6 citas/mes</strong>
+        <p id="roiResultDetail">40 consultas × 15 % = 6 citas; valor bruto aproximado: 270 €.</p>
       </div>
-      <div class="roi-fee-card">
-        <span>La cuota de Api, para ponerlo en contexto</span>
-        <strong id="roiFeeValue">85 €/mes</strong>
-        <p id="roiFeeDetail">Comparación con el valor bruto del escenario; no es beneficio neto.</p>
-      </div>
+      <div class="roi-fee-card"><span>Cuota mensual, para ponerla en contexto</span><strong id="roiFeeValue">85 €/mes</strong><p id="roiFeeDetail">Frente al valor bruto estimado; no es beneficio neto. No incluye implantación.</p></div>
       <details class="roi-messages-details">
-        <summary>¿Quieres estimar también tu volumen de mensajes?</summary>
+        <summary>Estimar también los mensajes incluidos</summary>
         <label class="roi-field">Conversaciones nuevas al día
           <input id="roiChatsPerDay" type="number" min="0" max="2000" step="1" value="15" inputmode="numeric">
-          <small>Estimación: 2 mensajes por conversación, 30 días al mes.</small>
+          <small>Estimación de 2 mensajes por conversación y 30 días al mes.</small>
         </label>
-        <p id="roiMessageEstimate" aria-live="polite">≈ 900 mensajes al mes; incluidos en el plan Autónomo.</p>
+        <p id="roiMessageEstimate" aria-live="polite">≈ 900 mensajes al mes.</p>
       </details>
-      <p class="roi-compact-note">Comparamos ventas o servicios brutos con la cuota: no es un cálculo de beneficio. Los casos son ejemplos de referencia, no resultados esperables de Api.</p>
+      <p class="roi-compact-note">Las referencias son ejemplos publicados, no resultados esperables de Api. La comparación usa importes brutos y no calcula beneficio.</p>
     </div>
     <div class="roi-phone-wrap" aria-label="Vista previa de la calculadora en un móvil">
-      <div class="roi-phone-shell">
-        <div class="roi-phone-screen">
-          <div class="roi-status"><span>9:41</span><i></i><span>● ▰ ▰</span></div>
-          <div class="roi-phone-appbar"><span>Api</span><b>Tu escenario</b><span>•••</span></div>
-          <div class="roi-phone-body">
-            <span class="roi-phone-kicker">REFERENCIA PUBLICADA</span>
-            <strong id="roiPhoneBenchmark">+38 % en citas</strong>
-            <span class="roi-phone-sub" id="roiPhonePeriod">Caso de estética · prueba de dos semanas</span>
-            <div class="roi-phone-number">
-              <small id="roiPhoneMetric">ESCENARIO SOBRE 24 RESERVAS</small>
-              <b id="roiPhoneValue">+410 €</b>
-              <span id="roiPhoneUnit">valor bruto equivalente a nuevas reservas</span>
-            </div>
-            <div class="roi-phone-equation" id="roiPhoneEquation">24 × 38 % × 45 € = 410 €</div>
-            <div class="roi-phone-separator"></div>
-            <span class="roi-phone-fee-title">CUOTA MENSUAL</span>
-            <b class="roi-phone-fee" id="roiPhoneFee">85 €/mes</b>
-            <span class="roi-phone-fee-ratio" id="roiPhoneRatio">Comparación orientativa</span>
-            <p class="roi-phone-small">Escenario ilustrativo con tus cifras. No es una promesa de resultado.</p>
-          </div>
-          <div class="roi-phone-home"></div>
-        </div>
-      </div>
-      <span class="roi-phone-caption">Una cuenta sencilla, en tu móvil.</span>
+      <div class="roi-phone-shell"><div class="roi-phone-screen">
+        <div class="roi-status"><span>9:41</span><i></i><span>● ▰ ▰</span></div>
+        <div class="roi-phone-appbar"><span>Api</span><b>Tu escenario</b><span>•••</span></div>
+        <div class="roi-phone-body">
+          <span class="roi-phone-kicker">TU ACTIVIDAD</span>
+          <strong id="roiPhoneSector">Belleza</strong>
+          <span class="roi-phone-sub" id="roiPhonePeriod">Caso publicado · WhatsApp</span>
+          <div class="roi-phone-number"><small id="roiPhoneMetric">ESCENARIO ORIENTATIVO</small><b id="roiPhoneValue">≈ 270 €</b><span id="roiPhoneUnit">valor bruto de citas</span></div>
+          <div class="roi-phone-equation" id="roiPhoneEquation">40 × 15 % × 45 € = 270 €</div>
+          <div class="roi-phone-separator"></div><span class="roi-phone-fee-title">CUOTA MENSUAL</span><b class="roi-phone-fee" id="roiPhoneFee">85 €/mes</b><span class="roi-phone-fee-ratio" id="roiPhoneRatio">Comparación orientativa</span>
+          <p class="roi-phone-small">Tus números. Un punto de partida para hablar de lo que Api puede hacer por tu negocio.</p>
+        </div><div class="roi-phone-home"></div>
+      </div></div><span class="roi-phone-caption">Una cuenta sencilla, en tu móvil.</span>
     </div>
   </div>
 </div><details aria-label="Condiciones detalladas de mensajería de WhatsApp" class="pricing-details" id="condiciones-mensajeria"><summary class="pricing-details-summary"><span>Detalles de mensajería y condiciones</span><small>Límites incluidos, ampliaciones y tarifas</small></summary><div class="wa-card" id="mensajes-whatsapp"><strong>Mensajes de WhatsApp incluidos en cada pack</strong><p class="wa-small">La suscripción cubre el coste de los mensajes estándar de atención por WhatsApp hasta 1.000 al mes en Autónomo, 1.500 en Empresa y 2.000 en Pyme. Si superas el límite, puedes ampliar en bloques de 1.000 mensajes por 25 €/mes.</p><p class="wa-small">Se cuentan mensajes salientes entregados, no conversaciones. Las campañas promocionales y otras plantillas con coste especial quedan fuera y se informan aparte.</p></div><p class="wa-small">El importe mensual se calcula con la suscripción del pack y, si procede, los bloques adicionales de 1.000 mensajes. El coste de los mensajes estándar de atención por WhatsApp está cubierto hasta el límite mensual del pack. Precios con IVA incluido. No se muestran tarifas de Meta en esta página.</p><p class="wa-small">Los costes de mensajería y de los bloques adicionales pueden variar si Meta actualiza sus tarifas. Si eso ocurre, te informaremos del nuevo importe antes de aplicarlo.</p><p class="pack-note">La implantación personalizada cubre la guía de atención, la configuración y las pruebas acordadas para el pack. La cuota cubre el coste de los mensajes estándar de atención por WhatsApp hasta el límite mensual indicado; cuenta mensajes salientes entregados, no conversaciones. Si superas el límite, puedes ampliar en bloques de 1.000 mensajes por 25 €/mes. Las campañas promocionales y otras plantillas con coste especial quedan fuera de esta cobertura y se informan aparte.</p><p class="wa-small">La estimación usa aproximadamente dos mensajes de respuesta por conversación nueva. Ajustaremos el consumo real con los datos de uso.</p></details>
@@ -1156,51 +1056,28 @@ body main>section,body main>section.section,body main>section.section.alt,body m
 </script>
 <script>
 (function(){
-var sector=document.getElementById('roiSector'), benchmark=document.getElementById('roiBenchmark'), plan=document.getElementById('roiPlan'), chats=document.getElementById('roiChatsPerDay');
-if(!sector||!benchmark||!plan)return;
-var byId=function(id){return document.getElementById(id)};
-var catalog={
- aesthetics:[
-  {id:'diva38',label:'Clínica estética · +38 % de citas (Meta Messenger)',type:'bookingLift',rate:.38,name:'+38 % de citas',period:'Prueba de dos semanas · Meta Business Agent en Messenger',source:'DIVA Beauty Center'},
-  {id:'benefit30',label:'Belleza · +30 % de reservas (WhatsApp)',type:'bookingLift',rate:.30,name:'+30 % de reservas',period:'Dos meses · frente al mismo periodo del año anterior',source:'Caso de belleza publicado por WhatsApp Business'},
-  {id:'yves21',label:'Tratamientos · +21 % de reservas (WhatsApp)',type:'bookingLift',rate:.21,name:'+21 % de reservas',period:'Tres meses · frente a reservas por teléfono y tienda',source:'Caso de cosmética publicado por WhatsApp Business'},
-  {id:'madhu15',label:'Autónoma de belleza · 15 % de consultas a citas (WhatsApp)',type:'leadConversion',rate:.15,name:'15 % de consultas a cita',period:'40 solicitudes · periodo de dos semanas',source:'Caso publicado por Meta'}
- ],
- clinic:[
-  {id:'siloam8',label:'Hospitales · +8 % de reservas (WhatsApp)',type:'bookingLift',rate:.08,name:'+8 % de reservas',period:'Dos meses · WhatsApp Business Platform',source:'Caso de salud publicado por WhatsApp Business'},
-  {id:'beame6',label:'Odontología · 6× reservas (WhatsApp)',type:'bookingMultiplier',rate:6,name:'6× las reservas',period:'Un año · frente al año anterior',source:'Caso dental publicado por WhatsApp Business'},
-  {id:'naiss35',label:'Clínica · +35 % de leads (Instagram/Messenger)',type:'leadLift',rate:.35,name:'+35 % de leads',period:'Prueba A/B · anuncios Reels a Instagram o Messenger',source:'Caso publicado por Meta'},
-  {id:'labx46',label:'Clínica · 4,6× leads (Messenger)',type:'leadMultiplier',rate:4.6,name:'4,6× los leads',period:'Prueba A/B · anuncios que abren Messenger',source:'Caso publicado por Meta'}
- ],
- restaurant:[
-  {id:'domino72',label:'Restaurante · +72 % en ventas (WhatsApp)',type:'salesLift',rate:.72,name:'+72 % en ventas',period:'Año 2023 frente a 2022 · CRM y campañas de WhatsApp',source:'Caso publicado por WhatsApp Business'}
- ],
- workshop:[{id:'manualJobs',label:'Taller · probar trabajos adicionales (escenario propio)',type:'manualJobs',name:'Escenario que introduces tú',period:'No hay un porcentaje público específico de taller',source:'Hipótesis propia; no es un benchmark'}],
- bike:[{id:'manualJobs',label:'Bicicletería o patinetes · trabajos adicionales (escenario propio)',type:'manualJobs',name:'Escenario que introduces tú',period:'No encontramos un caso público del sector con cifras verificables',source:'Hipótesis propia; no es un benchmark'}],
- other:[
-  {id:'sales17',label:'Comercio/servicios · +17 % en ventas (WhatsApp)',type:'salesLift',rate:.17,name:'+17 % en ventas',period:'Caso de cosmética · tres meses',source:'Caso publicado por WhatsApp Business'},
-  {id:'madhu15',label:'Autónoma · 15 % de consultas a citas (WhatsApp)',type:'leadConversion',rate:.15,name:'15 % de consultas a cita',period:'40 solicitudes · dos semanas',source:'Caso publicado por Meta'}
- ]
+var sector=document.getElementById('roiSector'),plan=document.getElementById('roiPlan'),chats=document.getElementById('roiChatsPerDay');if(!sector||!plan)return;var byId=function(id){return document.getElementById(id)};
+var cases={
+ beauty:{name:'Estética, peluquería y belleza',short:'Belleza',metric:'15 % de las consultas acabaron en citas confirmadas.',context:'Madhulika Enterprises · WhatsApp · pequeño negocio de belleza · dos semanas.',link:'https://www.facebook.com/business/success/madhulika-enterprises-bm-success-story',kind:'beauty'},
+ clinic:{name:'Clínica u odontología',short:'Clínica',metric:'Vitaldent comunicó un 90 % de confirmación de citas por WhatsApp.',context:'España · mensajes de servicio y recordatorios · seis meses.',link:'https://www.facebook.com/business/success/vitaldent-bm-success-story',kind:'clinic'},
+ restaurant:{name:'Restaurante y hostelería',short:'Restaurante',metric:'Domino’s Indonesia comunicó +72 % en ventas interanuales con campañas y fidelización por WhatsApp.',context:'Año 2023 frente a 2022 · gran cadena con CRM.',link:'https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/',kind:'restaurant'},
+ mobility:{name:'Venta de bicicletas o patinetes eléctricos',short:'Bicis y movilidad',metric:'Conversión a compra: 3,98 % frente al 2,73 % de comparación.',context:'Xe Dien Move · Messenger · prueba de ventas de vehículos eléctricos.',link:'https://www.facebook.com/business/success/xe-dien-move-bm-case-study',kind:'mobility'},
+ workshop:{name:'Taller o reparación',short:'Taller',metric:'No encontramos un caso publicado que mida reparaciones de bicis o patinetes.',context:'Prueba tus propios trabajos e importe medio; el escenario no usa un benchmark del sector.',link:'',kind:'workshop'}
 };
-var nf;try{nf=new Intl.NumberFormat('es-ES',{maximumFractionDigits:1})}catch(e){nf=new Intl.NumberFormat()}
-function val(id){var x=Number(byId(id).value);return Number.isFinite(x)&&x>0?x:0}function money(x){return new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(Math.round(x||0))}function num(x){return nf.format(x||0)}function pct(x){return new Intl.NumberFormat('es-ES',{maximumFractionDigits:1}).format((x||0)*100)+' %'}
-function current(){var list=catalog[sector.value]||catalog.other;return list.find(function(x){return x.id===benchmark.value})||list[0]}
-function updateOptions(){var list=catalog[sector.value]||catalog.other,prev=benchmark.value;benchmark.textContent='';list.forEach(function(item){var o=document.createElement('option');o.value=item.id;o.textContent=item.label;benchmark.appendChild(o)});benchmark.value=list.some(function(x){return x.id===prev})?prev:list[0].id;update()}
-function showFields(kind){['Sales','Bookings','Leads','Conversion','Manual'].forEach(function(s){byId('roiFields'+s).hidden=true});var id=({salesLift:'Sales',bookingLift:'Bookings',bookingMultiplier:'Bookings',leadLift:'Leads',leadMultiplier:'Leads',leadConversion:'Conversion',manualJobs:'Manual'})[kind]||'Bookings';byId('roiFields'+id).hidden=false}
-function update(){var ref=current();if(!ref)return;showFields(ref.type);var raw=0,quantity=0,detail='',equation='',eyebrow='',metric='',unit='';
- if(ref.type==='salesLift'){var revenue=val('roiRevenue');raw=revenue*ref.rate;quantity=raw;detail='Si tus ventas variaran como en el caso publicado, el '+pct(ref.rate)+' de '+money(revenue)+' equivaldría a '+money(raw)+' de ventas brutas.';equation=money(revenue)+' × '+pct(ref.rate)+' = '+money(raw);eyebrow='Escenario sobre tu facturación mensual';metric='VENTAS BRUTAS SOBRE '+money(revenue);unit='escenario ilustrativo de ventas';}
- else if(ref.type==='bookingLift'){var bookings=val('roiBookings'),ticket=val('roiBookingPrice');quantity=bookings*ref.rate;raw=quantity*ticket;detail='Un '+pct(ref.rate)+' más sobre '+num(bookings)+' reservas al mes equivaldría a '+num(quantity)+' reservas y '+money(raw)+' de valor bruto.';equation=num(bookings)+' × '+pct(ref.rate)+' × '+money(ticket)+' = '+money(raw);eyebrow='Valor bruto equivalente a más reservas';metric='ESCENARIO SOBRE '+num(bookings)+' RESERVAS / MES';unit='valor bruto equivalente a más reservas';}
- else if(ref.type==='bookingMultiplier'){var bookings=val('roiBookings'),ticket=val('roiBookingPrice');quantity=bookings*Math.max(0,ref.rate-1);raw=quantity*ticket;detail='Si el total llegase a '+num(ref.rate)+'× tus '+num(bookings)+' reservas actuales, las adicionales equivaldrían a '+num(quantity)+' reservas; valor bruto: '+money(raw)+'.';equation=num(bookings)+' × ('+num(ref.rate)+' − 1) × '+money(ticket)+' = '+money(raw);eyebrow='Escenario ilustrativo frente a tu base';metric='BASE: '+num(bookings)+' RESERVAS / MES';unit='valor bruto equivalente a reservas adicionales';}
- else if(ref.type==='leadLift'||ref.type==='leadMultiplier'){var leads=val('roiLeads'),close=val('roiCloseRate')/100,ticket=val('roiLeadTicket'),extra=ref.type==='leadLift'?leads*ref.rate:leads*Math.max(0,ref.rate-1);quantity=extra*close;raw=quantity*ticket;detail='Con '+num(leads)+' consultas/mes y tu conversión habitual del '+num(val('roiCloseRate'))+' %, el cambio de leads del caso equivaldría a '+num(quantity)+' citas/ventas y '+money(raw)+' brutos.';equation=num(leads)+' × '+(ref.type==='leadLift'?pct(ref.rate):num(ref.rate)+'×')+' × '+num(val('roiCloseRate'))+' % × '+money(ticket)+' = '+money(raw);eyebrow='Escenario de leads con tu conversión habitual';metric='BASE: '+num(leads)+' LEADS / MES';unit='valor bruto equivalente a citas/ventas';}
- else if(ref.type==='leadConversion'){var incoming=val('roiConversionLeads'),ticket=val('roiConversionTicket');quantity=incoming*ref.rate;raw=quantity*ticket;detail='Si '+num(incoming)+' consultas mensuales convirtieran al '+pct(ref.rate)+' del caso, serían '+num(quantity)+' citas confirmadas y '+money(raw)+' de valor bruto.';equation=num(incoming)+' × '+pct(ref.rate)+' × '+money(ticket)+' = '+money(raw);eyebrow='Escenario de citas desde tus consultas';metric='BASE: '+num(incoming)+' CONSULTAS / MES';unit='valor bruto equivalente a citas confirmadas';}
- else {quantity=val('roiJobs');raw=quantity*val('roiJobTicket');detail='Con '+num(quantity)+' trabajos adicionales al mes a '+money(val('roiJobTicket'))+' cada uno, el valor bruto sería '+money(raw)+'. Es una hipótesis que introduces tú.';equation=num(quantity)+' trabajos × '+money(val('roiJobTicket'))+' = '+money(raw);eyebrow='Escenario manual, sin benchmark del sector';metric='HIPÓTESIS: '+num(quantity)+' TRABAJOS / MES';unit='valor bruto de trabajos hipotéticos';}
- var planData=plan.value.split('|'),base=Number(planData[0])||85,included=Number(planData[1])||1000,daily=Math.min(2000,val('roiChatsPerDay')),msg=Math.round(daily*60),blocks=Math.max(0,Math.ceil((msg-included)/1000)),fee=base+blocks*25;
- byId('roiResultEyebrow').textContent=eyebrow;byId('roiResultValue').textContent='≈ '+money(raw)+'/mes';byId('roiResultDetail').textContent=detail;byId('roiResultContext').textContent=ref.source+' · '+ref.name+' · '+ref.period+'. Cada caso depende de su sector y condiciones; no es una previsión de Api.';
- byId('roiFeeValue').textContent=money(fee)+'/mes';byId('roiFeeDetail').textContent=raw>0?'La cuota equivale al '+new Intl.NumberFormat('es-ES',{maximumFractionDigits:1}).format(fee/raw*100)+' % del valor bruto del escenario. No es un cálculo de beneficio.':'Introduce tus cifras para comparar la cuota.';
- byId('roiPhoneBenchmark').textContent=ref.name;byId('roiPhonePeriod').textContent=ref.period;byId('roiPhoneMetric').textContent=metric;byId('roiPhoneValue').textContent='≈ '+money(raw);byId('roiPhoneUnit').textContent=unit;byId('roiPhoneEquation').textContent=equation;byId('roiPhoneFee').textContent=money(fee)+'/mes';byId('roiPhoneRatio').textContent=raw>0?new Intl.NumberFormat('es-ES',{maximumFractionDigits:1}).format(fee/raw*100)+' % del escenario':'Compara con tus datos';
- var msgText='≈ '+num(msg)+' mensajes al mes; incluidos en el plan '+plan.options[plan.selectedIndex].text.split(' ·')[0]+'.';if(blocks)msgText='≈ '+num(msg)+' mensajes al mes; '+blocks+' bloque'+(blocks===1?'':'s')+' adicional'+(blocks===1?'':'es')+' de 1.000, +'+money(blocks*25)+'/mes.';byId('roiMessageEstimate').textContent=msgText;
+function n(id){var x=Number(byId(id).value);return Number.isFinite(x)&&x>0?x:0}function num(x){return new Intl.NumberFormat('es-ES',{maximumFractionDigits:1}).format(x||0)}function eur(x){return new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(Math.round(x||0))}
+function showInputs(kind){['Beauty','Clinic','Restaurant','Mobility','Workshop'].forEach(function(k){byId('roiInputs'+k).hidden=true});var k={beauty:'Beauty',clinic:'Clinic',restaurant:'Restaurant',mobility:'Mobility',workshop:'Workshop'}[kind];byId('roiInputs'+k).hidden=false}
+function update(){var c=cases[sector.value]||cases.beauty;showInputs(c.kind);byId('roiCaseMetric').textContent=c.metric;byId('roiCaseContext').textContent=c.context;var link=byId('roiCaseLink');if(c.link){link.href=c.link;link.hidden=false}else{link.hidden=true}
+ var result=0,headline='',detail='',equation='',unit='',phoneMetric='',feeBase=Number(plan.value.split('|')[0])||85;
+ if(c.kind==='beauty'){var leads=n('roiBeautyLeads'),ticket=n('roiBeautyTicket');var bookings=leads*.15;result=bookings*ticket;headline='≈ '+num(bookings)+' citas al mes';detail='Si recibieras '+num(leads)+' consultas y se aplicara el 15 % del caso: ≈ '+num(bookings)+' citas; valor bruto orientativo '+eur(result)+'.';equation=num(leads)+' × 15 % × '+eur(ticket)+' = '+eur(result);unit='valor bruto orientativo de citas';phoneMetric='CITAS, APLICANDO EL 15 % DEL CASO';}
+ else if(c.kind==='clinic'){var ap=n('roiClinicAppointments'),ticket=n('roiClinicTicket'),conf=ap*.90;result=conf*ticket;headline='≈ '+num(conf)+' citas confirmadas';detail='Aplicando el 90 % de confirmación comunicado en el caso a '+num(ap)+' avisos: ≈ '+num(conf)+' confirmaciones. Valor bruto asociado: '+eur(result)+'; no son ventas adicionales.';equation=num(ap)+' × 90 % × '+eur(ticket)+' = '+eur(result);unit='valor bruto asociado a confirmaciones';phoneMetric='CONFIRMACIONES, APLICANDO EL 90 %';}
+ else if(c.kind==='restaurant'){var sales=n('roiRestaurantSales');result=sales*.72;headline='≈ '+eur(result)+' de diferencia ilustrativa';detail='Si tu facturación cambiara un 72 % como el caso publicado, '+eur(sales)+' equivaldrían a '+eur(result)+' de variación bruta. El caso es de una gran cadena.';equation=eur(sales)+' × 72 % = '+eur(result);unit='variación bruta ilustrativa, no previsión';phoneMetric='VARIACIÓN SI SE REPITIERA EL 72 %';}
+ else if(c.kind==='mobility'){var conv=n('roiMobilityChats'),ticket=n('roiMobilityTicket'),test=conv*.0398,control=conv*.0273,delta=test-control;result=delta*ticket;headline='≈ '+num(delta)+' compras de diferencia';detail='En '+num(conv)+' conversaciones, las tasas del test equivalen a '+num(test)+' compras frente a '+num(control)+'; diferencia orientativa '+eur(result)+' de ventas brutas. El caso mide venta de vehículos, no reparación.';equation=num(conv)+' × (3,98 % − 2,73 %) × '+eur(ticket)+' = '+eur(result);unit='diferencia de ventas brutas en el escenario';phoneMetric='DIFERENCIA TEST FRENTE A COMPARACIÓN';}
+ else {var jobs=n('roiWorkshopJobs'),ticket=n('roiWorkshopTicket');result=jobs*ticket;headline='≈ '+eur(result)+' de trabajos hipotéticos';detail='Con '+num(jobs)+' trabajos adicionales a '+eur(ticket)+' cada uno, el valor bruto sería '+eur(result)+'; son cifras que introduces tú.';equation=num(jobs)+' × '+eur(ticket)+' = '+eur(result);unit='valor bruto del escenario propio';phoneMetric='CÁLCULO CON TUS PROPIOS DATOS';}
+ byId('roiResultEyebrow').textContent=headline;byId('roiResultValue').textContent=eur(result);byId('roiResultDetail').textContent=detail;byId('roiFeeValue').textContent=eur(feeBase)+'/mes';byId('roiFeeDetail').textContent=result>0?'Cuota mensual frente al valor bruto orientativo: '+num(feeBase/result*100)+' %. No es beneficio neto e implantación no incluida.':'Introduce tus cifras para poner la cuota en contexto.';
+ byId('roiPhoneSector').textContent=c.short;byId('roiPhonePeriod').textContent=c.kind==='workshop'?'Escenario con tus propios datos':'Referencia publicada · '+(c.kind==='beauty'||c.kind==='clinic'||c.kind==='restaurant'?'WhatsApp':'Messenger');byId('roiPhoneMetric').textContent=phoneMetric;byId('roiPhoneValue').textContent=eur(result);byId('roiPhoneUnit').textContent=unit;byId('roiPhoneEquation').textContent=equation;byId('roiPhoneFee').textContent=eur(feeBase)+'/mes';byId('roiPhoneRatio').textContent=result>0?num(feeBase/result*100)+' % del valor bruto':'Compara con tus datos';
+ var planData=plan.value.split('|'),included=Number(planData[1])||1000,daily=Math.min(2000,n('roiChatsPerDay')),msgs=Math.round(daily*60),blocks=Math.max(0,Math.ceil((msgs-included)/1000));var msg='≈ '+num(msgs)+' mensajes al mes; incluidos en el plan '+plan.options[plan.selectedIndex].text.split(' ·')[0]+'.';if(blocks)msg='≈ '+num(msgs)+' mensajes al mes; '+blocks+' bloque'+(blocks===1?'':'s')+' extra de 1.000, +'+eur(blocks*25)+'/mes.';byId('roiMessageEstimate').textContent=msg;
 }
-sector.addEventListener('change',updateOptions);benchmark.addEventListener('change',update);plan.addEventListener('change',update);[ 'roiRevenue','roiBookings','roiBookingPrice','roiLeads','roiCloseRate','roiLeadTicket','roiConversionLeads','roiConversionTicket','roiJobs','roiJobTicket','roiChatsPerDay'].forEach(function(id){var el=byId(id);if(el){el.addEventListener('input',update);el.addEventListener('change',update)}});updateOptions();})();
+[sector,plan].forEach(function(el){el.addEventListener('change',update)});['roiBeautyLeads','roiBeautyTicket','roiClinicAppointments','roiClinicTicket','roiRestaurantSales','roiMobilityChats','roiMobilityTicket','roiWorkshopJobs','roiWorkshopTicket','roiChatsPerDay'].forEach(function(id){var el=byId(id);if(el){el.addEventListener('input',update);el.addEventListener('change',update)}});update();})();
 </script>
 <script>
 // Fotos de las tarjetas: al tocarlas se ven en grande en el visor de ejemplos
